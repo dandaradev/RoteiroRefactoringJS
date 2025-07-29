@@ -62,7 +62,6 @@ function gerarFaturaStr(fatura, pecas) {
     faturaStr += `Créditos acumulados: ${creditos} \n`;
     return faturaStr;
 }
-
 const faturas = JSON.parse(readFileSync('./faturas.json'));
 const pecas = JSON.parse(readFileSync('./pecas.json'));
 const faturaStr = gerarFaturaStr(faturas, pecas);
