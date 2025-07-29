@@ -83,6 +83,5 @@ const faturas = JSON.parse(readFileSync('./faturas.json'));
 const repositorio = new Repositorio();
 const servico = new ServicoCalculoFatura(repositorio);
 
-// Gerar a fatura
 const faturaStr = gerarFaturaStr(faturas, servico);
 console.log(faturaStr);
